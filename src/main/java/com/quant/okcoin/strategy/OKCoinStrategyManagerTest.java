@@ -16,10 +16,17 @@ public class OKCoinStrategyManagerTest {
 	public static void main(String[] args) throws InterruptedException {
 		Injector injector = Guice.createInjector(new OKCoinModule());
 		OKCoinStrategyManagerTest okTest = injector.getInstance(OKCoinStrategyManagerTest.class);
-		okTest.okManager.setStrategy(okTest.okStrategy);
-		okTest.okManager.start();
-		Thread.sleep(60000000);
-		okTest.okManager.stop();
+//		okTest.okManager.setStrategy(okTest.okStrategy);
+//		okTest.okManager.start();
+//		Thread.sleep(60000000);
+//		okTest.okManager.stop();
+		
+		try {
+			okTest.okStrategy.beforeStrategy();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		while(true) {
 //			Thread.sleep(5000);
 //		}
