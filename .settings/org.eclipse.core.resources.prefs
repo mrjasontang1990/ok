@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/quant/okcoin/fix/AccReqID.java=UTF-8
+encoding//src/main/java/com/quant/okcoin/fix/AccountInfoRequest.java=UTF-8
+encoding//src/main/resources/okcoin/quickfix-client.properties=UTF-8
